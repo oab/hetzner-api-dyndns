@@ -101,7 +101,7 @@ logger Info "Zone_ID: ${zone_id}"
 logger Info "Zone_Name: ${zone_name}"
 
 if [[ "${record_name}" = "" ]]; then
-  logger Error "Mission option for record name: -n <Record Name>"
+  logger Error "Missing option for record name: -n <Record Name>"
   logger Error "Use -h to display help."
   exit 1
 fi
